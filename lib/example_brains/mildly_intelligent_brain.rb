@@ -1,6 +1,6 @@
 
 module ExampleBrains
-  ## This is a sample brain to MURDER ALL
+  ## This is a sample brain that is hopefully somewhat intelligent.
   class MildlyIntelligentBrain < Brain
     # you have the option of picking from many cards, pick the best one.
     def pick(number, *cards)
