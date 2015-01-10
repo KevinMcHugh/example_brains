@@ -45,13 +45,14 @@ module ExampleBrains
         target = weakest_player_in_range_of(card)
         player.play_card(card, target)
       end
+
       player.hand.find_all(&:damage_dealing?).each do |card|
         is_a_bang_card = card.type == Card.bang_card
-        bangs_played += 1 if is_a_bang_card
         if !is_a_bang_card || bangs_played < 1
           target = weakest_player_in_range_of(card)
           player.play_card(card, target) if target
         end
+        bangs_played += 1 if is_a_bang_card
       end
     end
 
