@@ -63,6 +63,11 @@ module ExampleBrains
       end
     end
 
+    # Pick where to draw from
+    def draw_choice(choices)
+      choices.first
+    end
+
     private
     def weakest_player_in_range_of(card)
       in_range = player.players_in_range_of(card)

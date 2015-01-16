@@ -40,6 +40,11 @@ module ExampleBrains
       player.hand.first
     end
 
+    # Pick where to draw from
+    def draw_choice(choices)
+      choices.last
+    end
+
     #This is the method that is called on your turn.
     def play
       player.hand.each do |card|

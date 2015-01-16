@@ -76,6 +76,11 @@ module ExampleBrains
       end
     end
 
+    # Pick where to draw from
+    def draw_choice(choices)
+      choices.last
+    end
+
     private
     def over_bang_limit?(n)
       return false if player.character == "Character::WillyTheKidPlayer"

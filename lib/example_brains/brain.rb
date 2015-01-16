@@ -15,7 +15,7 @@ module ExampleBrains
     end
     def pick(number, *cards)
     end
-    def draw_choice(*choices)
+    def draw_choice(choices)
     end
     def notify(event)
     end
