@@ -3,6 +3,13 @@ module ExampleBrains
   ## This is a sample brain to MURDER ALL
   class MurderBrain < Brain
 
+    # Pick some number of emoji to represent your brain.
+    # by convention, all brain emoji end with `:neckbeard:`.
+    # The list of supported emojis can be found
+    # here: http://www.emoji-cheat-sheet.com/
+    def self.emoji
+      ':poop::neckbeard:'
+    end
     def initialize
     end
 

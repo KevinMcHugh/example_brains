@@ -2,6 +2,15 @@
 module ExampleBrains
   ## This is a sample brain that is hopefully somewhat intelligent.
   class MildlyIntelligentBrain < Brain
+
+    # Pick some number of emoji to represent your brain.
+    # by convention, all brain emoji end with `:neckbeard:`.
+    # The list of supported emojis can be found
+    # here: http://www.emoji-cheat-sheet.com/
+    def self.emoji
+      ':chart_with_upwards_trend::neckbeard:'
+    end
+
     # you have the option of picking from many cards, pick the best one.
     def pick(number, *cards)
       ordered = cards.flatten.map do |card|

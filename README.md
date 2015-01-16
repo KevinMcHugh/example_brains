@@ -1,7 +1,7 @@
 # ExampleBrains
 
 Congratulations, you've found the example_brains repo for [mustached-nemesis](https://github.com/KevinMcHugh/mustached-nemesis). this repo is a gem featuring a handful of different brains to get you started in developing your own brain. You can also use these brains as fodder for your own,
-more sophisticated brain. 
+more sophisticated brain.
 
 ## The Brains
 

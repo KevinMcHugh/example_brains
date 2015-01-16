@@ -2,6 +2,15 @@
 module ExampleBrains
   ## This is a sample brain to show basic brain structure and interaction with the player.
   class AttackRightBrain < Brain
+
+    # Pick some number of emoji to represent your brain.
+    # by convention, all brain emoji end with `neckbeard`.
+    # The list of supported emojis can be found
+    # here: http://www.emoji-cheat-sheet.com/
+    def self.emoji
+      ':gun::arrow_right::neckbeard:'
+    end
+
     # you have the option of picking from many cards, pick the best one.
     def pick(number, *cards)
       cards.flatten.first(number)
